@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/factorbg1land"
+    tools:context=".FactorActivity">
+
+    <ImageView
+        android:id="@+id/greenport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/colorgreen"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/redport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/colrred"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/longstreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scorecounter"
+        android:textColor="@android:color/white"
+        android:text="Longest Streak : 0"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/scorecounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop= "15dp"
+        android:layout_marginLeft = "15dp"
+        android:text="Current Streak : 0 "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="00:10"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:freezesText="true"/>
+
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="READY" />
+
+    <EditText
+        android:id="@+id/edittextnum"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:visibility="gone"
+        >
+
+
+        <RadioButton
+            android:id="@+id/Option_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:freezesText="true"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:id="@+id/Option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:freezesText="true"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:id="@+id/Option_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:freezesText="true"
+            android:text="Option 3" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="335dp"
+        android:text="FINISH GAME" />
+
+
+    <Button
+        android:id="@+id/confirm_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:freezesText="true"
+        android:text="CONFIRM ANSWER"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:freezesText="true"
+        android:textColor="@android:color/white"
+        android:text="Enter a Number"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
